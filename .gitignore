@@ -1,0 +1,6 @@
+venv/
+.env
+env.py
+__pycache__
+tasks.txt
+/node_modules
