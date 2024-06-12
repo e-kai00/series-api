@@ -36,5 +36,5 @@ def individual_serial(turbine):
         "turbine_id": turbine["turbine_id"],
     }
 
-def list_seial(turbines):
+def list_serial(turbines):
     return [individual_serial(turbine) for turbine in turbines] 

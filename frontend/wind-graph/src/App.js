@@ -44,7 +44,7 @@ const App = () => {
     <div className="container">
       <h1>Turbine Data Visualization</h1>
       
-      <div className="wrapper">
+      <div style={{ display: "flex", gap: "1em"}}>
         <div style={{ display: "flex", gap: ".3em"}}>
           <label>Turbine ID:</label>
           <select value={turbineId} onChange={(e) => setTurbineId(e.target.value)}>

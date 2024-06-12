@@ -1,11 +1,9 @@
 from pymongo.mongo_client import MongoClient
-from dotenv import load_dotenv
 import os
+import env
 
 
-load_dotenv()
-
-DB_URI = os.getenv("MONGODB_URI")
+DB_URI = os.environ["MONGODB_URI"]
 
 client = MongoClient(DB_URI)
 db = client['SERIES-API']

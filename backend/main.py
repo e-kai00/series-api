@@ -1,9 +1,7 @@
 from fastapi import FastAPI
-from pymongo.mongo_client import MongoClient
-from pymongo.server_api import ServerApi
 from connect_db import turbine_collection
 from fastapi.middleware.cors import CORSMiddleware
-from schema import list_seial
+from schema import list_serial
 from utils import format_date
 
 
@@ -40,7 +38,7 @@ async def get_data(turbine_id, start_date, end_date):
         }
     }
 
-    data = list_seial(turbine_collection.find(query))
+    data = list_serial(turbine_collection.find(query))
        
     return data
 

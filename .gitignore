@@ -2,5 +2,5 @@ venv/
 .env
 env.py
 __pycache__
-tasks.txt
+task.txt
 /node_modules
