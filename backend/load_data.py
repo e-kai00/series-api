@@ -1,7 +1,6 @@
 import pandas as pd
 from datetime import datetime
 from connect_db import turbine_collection
-from models import TurbineData
 
 
 csv_files = ['../csv_data/Turbine1.csv', '../csv_data/Turbine2.csv']

@@ -21,11 +21,11 @@ app.add_middleware(
 )
 
 @app.get("/", tags=["root"])
-async def read_root():
+def read_root():
     return {"message": "Welcome to the app! The app features 1 main endpoint: /data."}
 
 @app.get('/data', tags=["data"])
-async def get_data(turbine_id, start_date, end_date):   
+def get_data(turbine_id, start_date, end_date):   
     
     formatted_start_date = format_date(start_date)
     formatted_end_date = format_date(end_date)    
